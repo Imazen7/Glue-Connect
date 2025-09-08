@@ -30,7 +30,7 @@ const hasRequiredProfile = (p) => {
 
 const normalize = (s = "") => s.trim().toLowerCase();
 
-export default function Clubs() {
+const Clubs = () => {
   const user = auth.currentUser;
 
   const [me, setMe] = useState(null);
@@ -479,3 +479,4 @@ export default function Clubs() {
     </>
   );
 }
+export default Clubs;
