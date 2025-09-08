@@ -6,7 +6,7 @@ import { auth } from "../firebase";
 const MAX_ATTEMPTS = 3;
 const LOCK_TIME = 10 * 60 * 1000; 
 
-const UserLogin = () => {
+const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [isLocked, setIsLocked] = useState(false);
@@ -202,4 +202,4 @@ const UserLogin = () => {
   );
 };
 
-export default UserLogin;
+export default Login;
